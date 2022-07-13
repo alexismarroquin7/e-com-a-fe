@@ -1,3 +1,12 @@
+:root {
+  --black: #000;
+  --white: #fff;
+  --blue: #4285F4;
+  --red: #DB4437;
+  --yellow: #F4B400;
+  --green: #0F9D58;
+}
+
 html,
 body {
   padding: 0;
@@ -13,4 +22,18 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.Button,
+.Button--variant-primary {
+  border: 1px solid var(--blue);
+  padding: .5rem;
+  background-color: var(--blue);
+  color: var(--white);
+  border-radius: 1rem;
+}
+
+.Button--variant-dark {
+  border-color: var(--black);
+  background-color: var(--black);
 }
